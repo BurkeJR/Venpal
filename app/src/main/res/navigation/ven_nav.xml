@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ven_nav"
+    app:startDestination="@id/homeScreenFrag">
+
+    <fragment
+        android:id="@+id/homeScreenFrag"
+        android:name="com.example.venpal.HomeScreenFrag"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFrag_to_currencyFrag"
+            app:destination="@id/currencyFrag" />
+        <action
+            android:id="@+id/action_homeScreenFrag_to_contactFrag"
+            app:destination="@id/contactFrag" />
+        <action
+            android:id="@+id/action_homeScreenFrag_to_stocksFrag"
+            app:destination="@id/stocksFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFrag"
+        android:name="com.example.venpal.ContactFrag"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contactFrag_to_payFrag"
+            app:destination="@id/payFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/currencyFrag"
+        android:name="com.example.venpal.CurrencyFrag"
+        android:label="fragment_currency"
+        tools:layout="@layout/fragment_currency" />
+    <fragment
+        android:id="@+id/stocksFrag"
+        android:name="com.example.venpal.StocksFrag"
+        android:label="fragment_stocks"
+        tools:layout="@layout/fragment_stocks" />
+    <fragment
+        android:id="@+id/payFrag"
+        android:name="com.example.venpal.PayFrag"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" >
+        <action
+            android:id="@+id/action_payFrag_to_contactFrag"
+            app:destination="@id/contactFrag" />
+        <action
+            android:id="@+id/action_payFrag_to_homeScreenFrag"
+            app:destination="@id/homeScreenFrag" />
+    </fragment>
+</navigation>
