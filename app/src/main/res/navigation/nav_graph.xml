@@ -15,10 +15,6 @@
             app:destination="@id/currencyFragment"
             app:popUpTo="@id/homeFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_payFragment"
-            app:destination="@id/payFragment"
-            app:popUpTo="@id/homeFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_stocksFragment"
             app:destination="@id/stocksFragment"
             app:popUpTo="@id/homeFragment" />
@@ -31,7 +27,12 @@
         android:id="@+id/contactFragment"
         android:name="com.example.venpal.contactFragment"
         android:label="fragment_contact"
-        tools:layout="@layout/fragment_contact" />
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contactFragment_to_payFragment"
+            app:destination="@id/payFragment"
+            app:popUpTo="@id/contactFragment" />
+    </fragment>
     <fragment
         android:id="@+id/payFragment"
         android:name="com.example.venpal.payFragment"
