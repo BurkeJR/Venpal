@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.venpal.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_currencyFragment"
+            app:destination="@id/currencyFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_payFragment"
+            app:destination="@id/payFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_stocksFragment"
+            app:destination="@id/stocksFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_contactFragment"
+            app:destination="@id/contactFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.venpal.contactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.example.venpal.payFragment"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" />
+    <fragment
+        android:id="@+id/stocksFragment"
+        android:name="com.example.venpal.stocksFragment"
+        android:label="fragment_stocks"
+        tools:layout="@layout/fragment_stocks" />
+    <fragment
+        android:id="@+id/currencyFragment"
+        android:name="com.example.venpal.currencyFragment"
+        android:label="fragment_currency"
+        tools:layout="@layout/fragment_currency" />
 </navigation>
