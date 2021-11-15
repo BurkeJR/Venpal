@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.venpal.databinding.FragmentHomeScreenBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
 class HomeScreenFrag : Fragment() {
 
@@ -25,16 +23,13 @@ class HomeScreenFrag : Fragment() {
 
 
         binding.ContactButton.setOnClickListener {
-            val action =
-            findNavController().navigate(action)
+            findNavController().navigate(R.id.action_homeScreenFrag_to_contactFrag)
         }
         binding.StocksButton.setOnClickListener {
-            val action =
-                findNavController().navigate(action)
+                findNavController().navigate(R.id.action_homeScreenFrag_to_stocksFrag)
         }
         binding.CurrencyButton.setOnClickListener {
-            val action =
-                findNavController().navigate(action)
+                findNavController().navigate(R.id.action_homeScreenFrag_to_currencyFrag)
         }
 
         // Inflate the layout for this fragment
