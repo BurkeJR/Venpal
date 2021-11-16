@@ -10,4 +10,5 @@ import com.example.venpal.databinding.FragmentStocksBinding
 
 class stocksFragment : Fragment() {
 
+
 }
