@@ -2,4 +2,8 @@
     <string name="app_name">Venpal</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pay_amount">Pay Amount</string>
+    <string name="accept">Accept</string>
+    <string name="tesla_inc">Tesla Inc</string>
+    <string name="_1_023_50_usd">1,023.50 USD</string>
 </resources>
